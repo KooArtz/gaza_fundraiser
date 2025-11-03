@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Let's Help Gaza campaign. Participate in the rally and support Gaza through donations and solidarity.">
+    <meta property="og:title" content="Let's Help Gaza | Fundraiser by Khidhumaiy Jamiyya">
+    <meta property="og:description" content="Join the Let's Help Gaza campaign. Participate in the rally and support Gaza through donations and solidarity.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Dhivehinge Ehee Gaza Ah | Fundraiser by Youths of Maldives Tiktok Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #C62828;
+            --primary-green: #2E7D32;
+            --accent-dark-green: #1B5E20;
+            --deep-black: #000000;
+            --white: #FFFFFF;
+            --soft-gray: #F5F5F5;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--deep-black);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--deep-black) 50%, var(--primary-green) 100%);
+            z-index: 1;
+        }
+
+        .hero-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.03) 10px, rgba(255,255,255,0.03) 20px);
+            animation: slidePattern 20s linear infinite;
+        }
+
+        .hero-background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+            z-index: 2;
+        }
+
+        @keyframes slidePattern {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(20px); }
+        }
+
+        .hero-content {
+            position: relative;
+            justify-items: center;
+            align-items: center;
+            z-index: 3;
+            max-width: 900px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .hero-logo {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+
+        .hero-logo img {
+            width: 130%;
+            height: 140%;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 2rem;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+            letter-spacing: 3px;
+            line-height: 1.2;
+            margin-top: 2rem;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+            font-family: 'Amiri', serif;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-red), #d32f2f);
+            color: var(--white);
+            box-shadow: 0 4px 20px rgba(198, 40, 40, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(198, 40, 40, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-red);
+            transform: translateY(-3px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--deep-black);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-red), var(--primary-green));
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--soft-gray);
+        }
+
+        .about-content {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .about-content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Collaborator Section */
+        .collaborator {
+            background: linear-gradient(135deg, var(--primary-green), var(--accent-dark-green));
+            color: var(--white);
+        }
+
+        .collaborator .section-title {
+            color: var(--white);
+        }
+
+        .collaborator-content {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+
+        .collaborator-logo {
+            width: 200px;
+            height: 200px;
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .collaborator-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 10px;
+        }
+
+        /* First Event Section */
+        .first-event {
+            background: var(--white);
+        }
+
+        .event-description {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--deep-black);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .video-container video {
+            width: 100%;
+            display: block;
+            border-radius: 15px;
+        }
+
+        .video-placeholder {
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--white);
+            background: linear-gradient(135deg, rgba(198, 40, 40, 0.8), rgba(46, 125, 50, 0.8));
+            gap: 1rem;
+        }
+
+        .video-placeholder-icon {
+            font-size: 4rem;
+        }
+
+        .video-placeholder-text {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Current Campaign Section */
+        .current-campaign {
+            background: var(--soft-gray);
+        }
+
+        .campaign-details {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .campaign-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-card {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-red), #d32f2f);
+            color: var(--white);
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(198, 40, 40, 0.3);
+        }
+
+        .info-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-card p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            text-align: center;
+            background: var(--soft-gray);
+            padding: 1.5rem 2rem;
+            border-radius: 15px;
+            min-width: 100px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .countdown-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-red);
+            display: block;
+            line-height: 1;
+        }
+
+        .countdown-label {
+            font-size: 1rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+        }
+
+        .poster-showcase {
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .poster-image {
+            max-width: 600px;
+            width: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .poster-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 50px rgba(198, 40, 40, 0.3);
+        }
+
+        .poster-placeholder {
+            max-width: 600px;
+            width: 100%;
+            aspect-ratio: 3/4;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            gap: 1rem;
+        }
+
+        .poster-placeholder-icon {
+            font-size: 5rem;
+        }
+
+        /* Target Section */
+        .target {
+            background: linear-gradient(135deg, var(--deep-black), #1a1a1a);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .target::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(198, 40, 40, 0.1) 0%, transparent 70%);
+            animation: rotateGradient 20s linear infinite;
+        }
+
+        @keyframes rotateGradient {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .target .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .target .section-title {
+            color: var(--white);
+        }
+
+        .target-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .target-amount {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 800;
+            color: var(--primary-red);
+            margin: 2rem 0;
+            text-shadow: 0 0 30px rgba(198, 40, 40, 0.5);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 30px rgba(198, 40, 40, 0.5); }
+            50% { text-shadow: 0 0 50px rgba(198, 40, 40, 0.8); }
+        }
+
+        .target-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .target-tagline {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--primary-green);
+            margin-top: 2rem;
+        }
+
+        /* Mission Section */
+        .mission {
+            background: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(198, 40, 40, 0.05), rgba(46, 125, 50, 0.05));
+            z-index: 0;
+        }
+
+        .mission .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .mission-content {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+        }
+
+        .quote-banner {
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-green));
+            color: var(--white);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .quote-text {
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 300;
+            animation: fadeQuote 8s ease-in-out infinite;
+        }
+
+        /* Media Section */
+        .media {
+            background: var(--soft-gray);
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .media-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .media-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .media-thumbnail {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, var(--deep-black), #333);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .media-thumbnail::after {
+            content: '▶';
+            position: absolute;
+            font-size: 4rem;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .media-card:hover .media-thumbnail::after {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        .media-caption {
+            padding: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Donation Section */
+        .donation {
+            background: linear-gradient(135deg, var(--primary-green), var(--accent-dark-green));
+            color: var(--white);
+        }
+
+        .donation .section-title {
+            color: var(--white);
+        }
+
+        .donation-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .bank-details {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 3rem;
+        }
+
+        .bank-info {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .bank-field {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .bank-field:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .bank-label {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .bank-value {
+            font-size: 1.1rem;
+            font-family: 'Courier New', monospace;
+            text-align: right;
+        }
+
+        .copy-btn {
+            margin: 2rem auto 0;
+            display: block;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .thank-you {
+            text-align: center;
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+        }
+
+        .promo-videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .promo-thumbnail {
+            position: relative;
+            top: 25px;
+            right: 10px;
+            width: 105%;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--deep-black);
+            color: var(--white);
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-red);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-red);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--primary-red);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary-green);
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes fadeQuote {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            max-width: 900px;
+            width: 90%;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: var(--white);
+            font-size: 2.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            z-index: 10;
+            transition: transform 0.3s ease;
+        }
+
+        .modal-close:hover {
+            transform: scale(1.2);
+        }
+
+        .modal-video {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-video video {
+            width: 100%;
+            display: block;
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .countdown {
+                gap: 1rem;
+            }
+
+            .countdown-item {
+                padding: 1rem 1.5rem;
+                min-width: 80px;
+            }
+
+            .countdown-value {
+                font-size: 2rem;
+            }
+
+            .campaign-details {
+                padding: 2rem 1.5rem;
+            }
+
+            .bank-field {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+
+            .bank-value {
+                text-align: center;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .hero-logo {
+                width: 140px;
+                height: 140px;
+            }
+
+            .modal-close {
+                top: -35px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="/assets/asset_logo.png" alt="Let's Help Gaza Logo">
+            </div>
+            <h1>LET'S HELP GAZA</h1>
+            <div class="cta-buttons">
+                <a href="#donation" class="btn btn-primary">Donate Now</a>
+            </div>
+            <p style="margin-top: 2rem; font-size: 1.1rem; opacity: 0.9; animation: bounceArrow 2s ease-in-out infinite;">
+                ↓ Scroll Down for More Info ↓
+            </p>
+        </div>
+    </section>
+
+    <style>
+        @keyframes bounceArrow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+    </style>
+
+    <!-- About Us -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">Who We Are</h2>
+            <div class="about-content fade-in">
+                <p>We are a passionate group of Maldivian youth using TikTok platform to raise funds for those in need — from local families to international humanitarian causes. This time, we're standing with Palestine, uniting our followers to make a real difference.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborator -->
+    <section class="collaborator">
+        <div class="container">
+            <h2 class="section-title">Our Trusted Partner</h2>
+            <div class="collaborator-logo">
+            <img src="/assets/asset_khidhumaiy.png" alt="Khidhumaiy Jamiyya">
+            </div>
+            <div class="collaborator-content">
+                <p>Khidhumaiy Jamiyyaa is a humanitarian organization dedicated to assisting Muslims in the Maldives and globally. They provide vital relief during crises, embodying the Islamic principle of helping those in need. Inspired by their humanitarian efforts in Gaza, we are raising additional funds for Palestine on behalf of the Maldives.</p>
+                <br>
+                <p>For more information, visit their website: <a href="https://khidhumaiy.org/" target="_blank">khidhumaiyjamiyya.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Fundraising Event -->
+    <section class="first-event">
+        <div class="container">
+            <h2 class="section-title fade-in">Our First Step Forward</h2>
+            <p class="event-description fade-in">Our first fundraising live event on October 7, 2025, provided immediate support — meals and water to Palestinians within 72 hours — thanks to Khidhumaiy Jamiyyaa.</p>
+            <div class="video-container fade-in">
+                <!-- Replace with: <video controls><source src="assets/videos/first-event.mp4" type="video/mp4"></video> -->
+                <div class="video-placeholder">
+                    <small style="opacity: 0.7;"><video  controls>
+<source src="/assets/asset_vid.mp4" type="video/mp4">
+</video></small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Campaign -->
+    <section class="current-campaign" id="event">
+        <div class="container">
+            <h2 class="section-title fade-in">Upcoming Fundraising Event</h2>
+            <div class="campaign-details fade-in">
+                <div class="campaign-info">
+                    <div class="info-card">
+                        <h3>📅 Date</h3>
+                        <p>November 7, 2025</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🕓 Start Time</h3>
+                        <p>4:00 PM</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📍 Route</h3>
+                        <p>Rasfannu → Artificial Beach → Hulhumale'</p>
+                    </div>
+                </div>
+
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+
+                <div class="poster-showcase">
+                    <div class="poster-placeholder">
+                        <small><img src="/assets/untitled.png" alt="">
+                        </small>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem; padding: 2rem; background: var(--soft-gray); border-radius: 15px;">
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        <strong>🚗 Support:</strong> Taxi Association, Racing Association, Volunteers
+                    </p>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        <strong>📱 Live Broadcast:</strong> TikTok @PalestineMV
+                    </p>
+                    <p style="font-size: 1.1rem;">
+                        <strong>🌙 Evening Fundraising:</strong> 8:00 PM @MTPtheGoat
+                    </p>
+                    <p style="font-size: 1rem; margin-top: 1.5rem; color: var(--primary-green); font-weight: 600;">
+                        🎉 Free to Join! Everyone Welcome!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target -->
+    <section class="target">
+        <div class="container">
+            <h2 class="section-title">Our Goal</h2>
+            <div class="target-content">
+                <div class="target-amount">MVR 1 Million</div>
+                <p class="target-description">We aim to raise MVR 1 Million to provide relief for Palestine. Even if we don't reach it on event day, we'll continue until we achieve this milestone — every contribution counts.</p>
+                <p class="target-tagline">✨ A Million Reasons to Care ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Purpose -->
+    <section class="mission">
+        <div class="container">
+            <h2 class="section-title fade-in">Why We Stand with Palestine</h2>
+            <div class="mission-content fade-in">
+                <p>Our mission is rooted in compassion, solidarity, and the belief that every life matters. We stand with Palestine not as a political statement, but as a humanitarian commitment. Through transparency, unity, and unwavering dedication, we aim to provide hope and tangible support to those who need it most. Together, we can make a difference that transcends borders and brings light to those in darkness.</p>
+            </div>
+            <div class="quote-banner fade-in">
+                <p class="quote-text" id="quote">"From the Maldives to Gaza — Compassion Unites Us."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media & Interviews -->
+    <section class="media" id="media">
+        <div class="container">
+            <h2 class="section-title fade-in">TV Interviews & Media Features</h2>
+            <div class="media-grid">
+                <div class="media-card fade-in" onclick="openModal('tvm')">
+                    <div class="media-thumbnail">
+                        <span style="font-size: 4rem;">📺</span>
+                    </div>
+                    <p class="media-caption"> Video 1 </p>
+                </div>
+                <div class="media-card fade-in" onclick="openModal('coverage')">
+                    <div class="media-thumbnail">
+                        <span style="font-size: 4rem;">🎥</span>
+                    </div>
+                    <p class="media-caption"> Video 3 </p>
+                </div>
+                <div class="media-card fade-in" onclick="openModal('community')">
+                    <div class="media-thumbnail">
+                        <span style="font-size: 4rem;">📹</span>
+                    </div>
+                    <p class="media-caption">Video 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation" id="donation">
+        <div class="container">
+            <h2 class="section-title">Donate & Support</h2>
+            <div class="donation-content">
+                <div class="bank-details fade-in">
+                    <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem;">💳 Bank Transfer Details</h3>
+                    <div class="bank-info">
+                        <div class="bank-field">
+                            <span class="bank-label">Bank Name:</span>
+                            <span class="bank-value">Bank of Maldives</span>
+                        </div>
+                        <div class="bank-field">
+                            <span class="bank-label">Account Name:</span>
+                            <span class="bank-value">Khidhumaiy</span>
+                        </div>
+                        <div class="bank-field">
+                            <span class="bank-label">Account Number (MVR):</span>
+                            <span class="bank-value">7770000129941</span>
+                        </div>
+                                                <div class="bank-field">
+                            <span class="bank-label">Account Number (USD):</span>
+                            <span class="bank-value">7770000129942</span>
+                        </div>
+                        <div class="bank-field">
+                            <span class="bank-label">Reference:</span>
+                            <span class="bank-value">Dhivehinge Ehee Gaza Ah</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary copy-btn" onclick="copyAccountInfo()">📋 Copy Account Info</button>
+                </div>
+
+                <div class="thank-you fade-in">
+                    <p>From the Maldives to Gaza — Compassion Unites Us</p>
+                </div>
+
+                <h3 style="text-align: center; margin: 3rem 0 2rem; font-size: 1.8rem;">📹 Promotional Videos</h3>
+                <div class="promo-videos">
+                    <div class="media-card fade-in" onclick="openModal('promo1')">
+                        <div class="media-thumbnail">
+                            <span><img src="/assets/thumbnail.png" class="promo-thumbnail" alt="" ></span>
+                        </div>
+                        <p class="media-caption">Campaign Video 1</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Let's Help Gaza</h3>
+                <p>A humanitarian initiative by the Maldivian youth TikTok community in partnership with Khidhumaiy Jamiyya.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#event">Event Details</a></li>
+                    <li><a href="#media">Media Coverage</a></li>
+                    <li><a href="#donation">Donate</a></li>
+                    <li><a href="https://khidhumaiy.org/">Khidhumaiy.org</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@mtp_the_goat?lang=en-GB" class="social-link" target="_blank" rel="noopener">@MTPtheGoat</a>
+                    <a href="https://www.tiktok.com/@palestinemv" class="social-link" target="_blank" rel="noopener">@PalestineMV</a>
+                    <a href="https://www.facebook.com/khidhumaiy.org" class="social-link" target="_blank" rel="noopener">Khidhumaiy - facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Youths of Maldives TikTok Community. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+            <div class="modal-video">
+                <div class="video-placeholder" id="modalVideoContent">
+                    <span class="video-placeholder-icon">📹</span>
+                    <span class="video-placeholder-text">Video Player</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const eventDate = new Date('November 7, 2025 16:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            if (distance > 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            } else {
+                document.getElementById('countdown').innerHTML = '<p style="font-size: 2rem; color: var(--primary-red); font-weight: 700;">🎉 Event is Live! 🎉</p>';
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        document.querySelectorAll('.about-content').forEach(el => observer.observe(el));
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Copy Account Info
+        function copyAccountInfo() {
+            const accountInfo = `Bank Name: Bank of Maldives
+Account Name: Khidhumaiy
+Account Number (MVR): 7770000129941
+Account Number (USD): 7770000129942
+Reference: Dhivehinge Ehee Gaza Ah`;
+
+            navigator.clipboard.writeText(accountInfo).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '✓ Copied to Clipboard!';
+                btn.style.background = 'linear-gradient(135deg, var(--primary-green), var(--accent-dark-green))';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                }, 3000);
+            }).catch(err => {
+                alert('Failed to copy. Please copy the details manually.');
+            });
+        }
+
+        // Modal Functions
+        const videoFiles = {
+            'mission': 'assets/videos/mission-video.mp4',
+            'tvm': 'assets/videos/tvm-interview.mp4',
+            'coverage': 'assets/videos/campaign-coverage.mp4',
+            'community': 'assets/videos/community-support.mp4',
+            'promo1': 'assets/promo_vid.mp4',
+            'promo2': 'assets/videos/promo-2.mp4',
+            'promo3': 'assets/videos/promo-3.mp4',
+            'promo4': 'assets/videos/behind-scenes.mp4'
+        };
+
+        const videoTitles = {
+            'mission': 'Our Mission Video',
+            'tvm': 'TVM Interview – October 2025',
+            'coverage': 'Campaign Coverage',
+            'community': 'Community Support',
+            'promo1': 'Campaign Video 1',
+            'promo2': 'Campaign Video 2',
+            'promo3': 'Campaign Video 3',
+            'promo4': 'Behind the Scenes'
+        };
+
+        function openModal(videoType) {
+            const modal = document.getElementById('videoModal');
+            const modalContent = document.getElementById('modalVideoContent');
+            const videoPath = videoFiles[videoType];
+            const videoTitle = videoTitles[videoType];
+            
+            // Try to load video, fallback to placeholder if not found
+            modalContent.innerHTML = `
+                <video controls autoplay style="width: 100%; display: block; border-radius: 10px;">
+                    <source src="${videoPath}" type="video/mp4">
+                    <div class="video-placeholder">
+                        <span class="video-placeholder-icon">📹</span>
+                        <span class="video-placeholder-text">${videoTitle}</span>
+                        <small style="opacity: 0.7; margin-top: 1rem;">Video file: ${videoPath}</small>
+                        <small style="opacity: 0.7;">Please add your video file to this location</small>
+                    </div>
+                </video>
+            `;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('videoModal');
+            const modalContent = document.getElementById('modalVideoContent');
+            
+            // Stop video playback
+            const video = modalContent.querySelector('video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+            
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on click outside
+        document.getElementById('videoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Parallax Effect on Hero
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const scrolled = window.pageYOffset;
+                    const hero = document.querySelector('.hero-background');
+                    if (hero && scrolled < window.innerHeight) {
+                        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Animate quote rotation
+        const quotes = [
+            "🇲🇻 From the Maldives to Gaza — Compassion Unites Us 🇵🇸",
+            "💚 Together, we bring hope to those who need it most",
+            "✨ Every contribution is a step towards healing and peace",
+            "🤝 United in humanity, we stand with Palestine"
+        ];
+        let currentQuote = 0;
+
+        setInterval(() => {
+            const quoteElement = document.getElementById('quote');
+            if (quoteElement) {
+                quoteElement.style.opacity = '0';
+                setTimeout(() => {
+                    currentQuote = (currentQuote + 1) % quotes.length;
+                    quoteElement.textContent = quotes[currentQuote];
+                    quoteElement.style.opacity = '1';
+                }, 500);
+            }
+        }, 6000);
+
+        // Loading optimization - lazy load images
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img[data-src]');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            images.forEach(img => imageObserver.observe(img));
+        });
+    </script>
+</body>
+</html>
