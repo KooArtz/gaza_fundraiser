@@ -1062,23 +1062,17 @@
         <div class="container">
             <h2 class="section-title fade-in">TV Interviews & Media Features</h2>
             <div class="media-grid">
-                <div class="media-card fade-in" onclick="openModal('tvm')">
+                <div class="media-card fade-in" onclick="openModal('vid_1')">
                     <div class="media-thumbnail">
                         <span style="font-size: 4rem;">📺</span>
                     </div>
                     <p class="media-caption"> Video 1 </p>
                 </div>
-                <div class="media-card fade-in" onclick="openModal('coverage')">
+                <div class="media-card fade-in" onclick="openModal('vid_2')">
                     <div class="media-thumbnail">
                         <span style="font-size: 4rem;">🎥</span>
                     </div>
                     <p class="media-caption"> Video 3 </p>
-                </div>
-                <div class="media-card fade-in" onclick="openModal('community')">
-                    <div class="media-thumbnail">
-                        <span style="font-size: 4rem;">📹</span>
-                    </div>
-                    <p class="media-caption">Video 3</p>
                 </div>
             </div>
         </div>
@@ -1256,20 +1250,14 @@ Reference: Dhivehinge Ehee Gaza Ah`;
 
         // Modal Functions
         const videoFiles = {
-            'mission': 'assets/videos/mission-video.mp4',
-            'tvm': 'assets/videos/tvm-interview.mp4',
-            'coverage': 'assets/videos/campaign-coverage.mp4',
-            'community': 'assets/videos/community-support.mp4',
-            'promo1': 'assets/promo_vid.mp4',
-            'promo2': 'assets/videos/promo-2.mp4',
-            'promo3': 'assets/videos/promo-3.mp4',
-            'promo4': 'assets/videos/behind-scenes.mp4'
+            'vid_1': './interview_1.mp4',
+            'vid_2': './interview_2.mp4',
+            'promo1': './assets/promo_vid.mp4',
         };
 
         const videoTitles = {
-            'mission': 'Our Mission Video',
-            'tvm': 'TVM Interview – October 2025',
-            'coverage': 'Campaign Coverage',
+            'vid_1': 'Interview 1',
+            'vid_2': 'Interview 2',
             'community': 'Community Support',
             'promo1': 'Campaign Video 1',
             'promo2': 'Campaign Video 2',
@@ -1386,6 +1374,7 @@ Reference: Dhivehinge Ehee Gaza Ah`;
 </body>
 
 </html>
+
 
 
 
